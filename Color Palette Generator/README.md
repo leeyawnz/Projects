@@ -4,8 +4,8 @@
 
 ### Version 3:
 - Added 2 more color palette generation modes:
-> Complementary colors
-> Monochromatic colors
+> 1. Complementary colors
+> 2. Monochromatic colors
 
 ### Version 2:
 - Changed the number of hexcode generated from 1 to 5
