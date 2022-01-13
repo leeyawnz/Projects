@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: #eeeeee;
+}
+#container {
+    width: 70vw;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Flex Classes */
+.flex {
+    display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-spacebtw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-spaceevenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Font Classes */
+.small {
+    font-size: 12px;
+}
+.medium {
+    font-size: 18px;
+}
+.large {
+    font-size: 36px;
+}
+.bold {
+    font-weight: bold;
+}
+.bolder {
+    font-weight: bolder;
+}
+
+/* Font Colors */
+.top-fade-color {
+    color: #00000095;
+}
+.mid-fade-color {
+    color: #858585;
+}
+
+/* Icon Width */
+.icon-width {
+    width: 36px;
+}
+
+/* Margins */
+.separator {
+    margin: 0px 6px;
+}
+
+
+
+/* Top */
+#city-name {
+    padding: 72px 0px 6px 0px;
+}
+#current-description {
+    padding-top: 36px;
+}
+#current-temp {
+    font-size: 78px;
+    padding: 3px 0px 36px 0px;
+}
+
+
+/* Middle */
+#middle-container {
+    margin: 12px 12px;
+    padding: 12px 0px;
+    border-top: 2px solid #00000070;
+    border-bottom: 2px solid #00000070;
+}
+
+/* Bottom */
+#bottom {
+    padding-bottom: 72px;
+}
+#bottom-container {
+    width: 40%;
+}
+#tomorrow {
+    margin-bottom: 12px;
+}
+
+@media(max-width: 768px) {
+    .small {
+        font-size: 9px;
+    }
+    .medium {
+        font-size: 16px;
+    }
+    #bottom-container {
+        width: 80%;
+    }
+    #container {
+        width: 85vw;
+        font-size: 14px;
+    }
+    #current-description {
+        font-size: 16px;
+    }
+}
