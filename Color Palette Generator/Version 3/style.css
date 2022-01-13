@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+#header div {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* Filter */
+#filter {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+#filter-container {
+    position: relative;
+    padding-left: 10px;
+}
+#filter-types {
+    position: absolute;
+}
+.btn {
+    padding: 8px 16px;
+    width: 155px;
+    text-align: left;
+    border: none;
+    background-color: HSL(204, 40%, 52%);
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.filter:hover {
+    background-color: HSL(204, 40%, 52%);
+}
+.filter {
+    margin-top: 3px;
+    width: 130px;
+    background-color: grey;
+}
+.selected {
+    background-color: HSL(204, 40%, 52%);
+}
+.no-show {
+    display: none;
+}
+
+/* Palette */
+#color-1, #color-3, #color-5 {
+    background-color: blue;
+}
+#color-2, #color-4 {
+    background-color: pink;
+}
+
+#palette {
+    display: flex;
+    height: 78vh;
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+}
+.color {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20vw;
+}
+.hexcode {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Generate */
+#generate button{
+    width: 100%;
+    height: 8vh;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    border: none;
+    background-color: white;
+}
+#generate button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .btn {
+        font-size: 12px;
+    }
+    #palette {
+        flex-direction: column;
+    }
+    .color {
+        width: 100%;
+        height: 15.6vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    .hexcode {
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    #generate button {
+        font-size: 14px;
+    }
+}
