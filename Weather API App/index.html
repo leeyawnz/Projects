@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singapore Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex-center">
+    <div id="container">
+        <!-- Card Top -->
+        <div class="flex-column">
+            <div id="city-name" class="large bolder"></div>
+            <div id="city-coord" class="flex small top-fade-color">
+                <div>Lon: <span id="city-lon"></span></div>
+                <div class="separator">|</div>
+                <div>Lat: <span id="city-lat"></span></div>
+            </div>
+            <div id="current-description" class="bolder"></div>
+            <div id="current-temp"></div>
+            <div id="current-etc" class="flex small top-fade-color">
+                <div>Pressure: <span id="current-pressure"></span></div>
+                <div class="separator">|</div>
+                <div>Humidity: <span id="current-humidity"></span></div>
+            </div>
+        </div>
+
+        <!-- Card Middle -->
+        <div id="middle">
+            <div id="middle-container" class="flex-spaceevenly">
+                <div class="flex-column">
+                    <div class="medium bold">Now</div>
+                    <img id="now-icon" src="" alt="">
+                    <div id="now-temp" class="medium bold"></div>
+                </div>
+                <div class="flex-column">
+                    <div id="hour1-title" class="small mid-fade-color"></div>
+                    <img id="hour1-icon" class="icon-width" src="" alt="">
+                    <div id="hour1-temp" class="small mid-fade-color"></div>
+                </div>
+                <div class="flex-column">
+                    <div id="hour2-title" class="small mid-fade-color"></div>
+                    <img id="hour2-icon" class="icon-width" src="" alt="">
+                    <div id="hour2-temp" class="small mid-fade-color"></div>
+                </div>
+                <div class="flex-column">
+                    <div id="hour3-title" class="small mid-fade-color"></div>
+                    <img id="hour3-icon" class="icon-width" src="" alt="">
+                    <div id="hour3-temp" class="small mid-fade-color"></div>
+                </div>
+                <div class="flex-column">
+                    <div id="hour4-title" class="small mid-fade-color"></div>
+                    <img id="hour4-icon" class="icon-width" src="" alt="">
+                    <div id="hour4-temp" class="small mid-fade-color"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Bottom -->
+        <div id="bottom" class="flex-center">
+            <div id="bottom-container">
+                <div id="tomorrow" class="flex-spacebtw">
+                    <div>Tomorrow</div>
+                    <div class="flex-center">
+                        <img id="tomorrow-icon" class="icon-width" src="" alt="">
+                        <div id="tomorrow-temp"></div>
+                    </div>
+                </div>
+                <div class="flex-spacebtw">
+                    <div> Day After Tomorrow</div>
+                    <div class="flex-center">
+                        <img id="dAT-icon" class="icon-width" src="" alt="">
+                        <div id="dAT-temp"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
