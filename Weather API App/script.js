@@ -1,6 +1,5 @@
 // API Key
 // City API Key
-api.openweathermap.org/data/2.5/weather?id=524901&appid=YOUR_API_KEY
 let queryUrl1 = "https://api.openweathermap.org/data/2.5/weather?q="
 let APIKey = "&appid=7c7d7a1926ecee9815479af7ceeaee76"
 let units = "&units=metric"
