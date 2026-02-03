@@ -15,7 +15,7 @@ fetch(file1).then((response) => response.json()).then((data) => {
     document.getElementById("city-lat").innerHTML = Math.round(lat * 100) / 100;
 
     // Hourly, Daily API Key
-    let queryUrl2 = "https://api.openweathermap.org/data/2.5/onecall?lat=";
+    let queryUrl2 = "https://api.openweathermap.org/data/3.0/onecall?lat=";
     let APIoptions = "&exclude=minutely,alerts";
     let file2 = queryUrl2 + lat + "&lon=" + lon + "&" + units + APIoptions + APIKey;
     console.log(file2)
