@@ -1,11 +1,12 @@
 // API Key
 // City API Key
+api.openweathermap.org/data/2.5/weather?id=524901&appid=YOUR_API_KEY
 let queryUrl1 = "https://api.openweathermap.org/data/2.5/weather?q="
 let APIKey = "&appid=7c7d7a1926ecee9815479af7ceeaee76"
 let units = "&units=metric"
 let cityName = "Singapore";
 let file1 = queryUrl1 + cityName + units + APIKey;
-        
+console.log(file1)
 fetch(file1).then((response) => response.json()).then((data) => {
     let lat = data.coord.lat;
     let lon = data.coord.lon;
@@ -18,7 +19,7 @@ fetch(file1).then((response) => response.json()).then((data) => {
     let queryUrl2 = "https://api.openweathermap.org/data/2.5/onecall?lat=";
     let APIoptions = "&exclude=minutely,alerts";
     let file2 = queryUrl2 + lat + "&lon=" + lon + "&" + units + APIoptions + APIKey;
-
+    console.log(file2)
     fetch(file2).then((response) => response.json()).then((data) => {
         // Current Data
         console.log(data)
