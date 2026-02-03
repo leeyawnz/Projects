@@ -23,9 +23,9 @@ fetch(file1).then((response) => response.json()).then((data) => {
         // Current Data
         console.log(data)
         let description = data.weather[0].description;
-        let currentTemp = Math.round(data.current.temp) + "ºC";
-        let pressure = data.current.pressure;
-        let humidity = data.current.humidity + "%";
+        let currentTemp = Math.round(data.temp) + "ºC";
+        let pressure = data.pressure;
+        let humidity = data.humidity + "%";
 
         document.getElementById("current-description").innerHTML = description;
         document.getElementById("current-temp").innerHTML = currentTemp;
