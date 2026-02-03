@@ -21,6 +21,7 @@ fetch(file1).then((response) => response.json()).then((data) => {
 
     fetch(file2).then((response) => response.json()).then((data) => {
         // Current Data
+        console.log(data)
         let description = data.current.weather[0].description;
         let currentTemp = Math.round(data.current.temp) + "ºC";
         let pressure = data.current.pressure;
